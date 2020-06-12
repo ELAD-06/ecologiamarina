@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: url('../img/logo-web.png') 0 0 repeat-x;
+    font-size: 0!important;
+    height: 84px;
+    width: 250px;
+}
+
+h1, h2 {
+    font-family: Arial Rounded MT bold;
+    margin-top: 15px;
+}
+
+header {
+    background: rgba(6,80,215);
+}
+
+nav {
+    margin: auto;
+}
+
+.barra-nav  ul {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background: rgba(6,80,215);
+}
+
+.barra-nav li {
+    float: right;
+}
+
+.barra-nav li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.barra-nav li a:hover {
+    background-color: rgb(41, 40, 40, .1);
+}
+
+.bloque-1 {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.bloque-2, .bloque-3, .bloque-4, .bloque-5 {
+    width: 1220px;
+    margin: auto;
+}
+
+.bloque-2 {
+    background: rgba(6,80,215, .1);
+    text-align: center;
+    height: 600px;
+}
+
+.bloque-2 .texto {
+    padding: 20px;
+}
+
+.bloque-2 a {
+    text-decoration: none;
+}
+
+.content-cards {
+    display: flex;
+}
+
+.content-cards .card {
+    cursor: pointer;
+    margin: auto;
+    background: rgba(6,80,215);
+    width: 350px;
+    height: 380px;
+    padding: 15px;
+    border: 1px solid rgba(6, 80, 215);
+    border-radius: 20px;
+}
+
+.subtitle {
+    font-size: 17px;
+}
+
+.content-cards .card p, .subtitle {
+    color: white;
+}
+
+.content-cards .card {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bloque-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 45% 10% 45%); 
+}
+
+.bloque-3 figure {
+    margin: 0;
+}
+
+.bloque-3 figure img {
+    margin-bottom: 20px;
+}
+
+.bloque-3, .bloque-4 p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.bloque-4 p {
+    margin: 5px 0px 20px 0px;
+}
+
+.content-2 {
+    margin-top: 15px;
+}
+
+.bloque-5 {
+    display: grid;
+    grid-template-columns: repeat(3, 45% 10% 45%); 
+}
+
+.bloque-5 figure{
+    margin: 0;
+}
+
+.formulario input {
+    display: block;
+    width: 420px;
+    height: 30px;
+    border: 2px solid rgba(6,80,215);
+    border-radius: 3px;
+    outline: none;
+    margin: 0px 0px 5px 0px;
+}
+
+.formulario textarea {
+    border: 2px solid rgba(6,80,215);
+    border-radius: 3px;
+    outline: none;
+}
+
+.formulario .btn {
+    width: 100px;
+    height: 36px;
+    border: 1px solid rgba(6,80,215);
+    border-radius: 5px;
+    background-color: rgba(6,80,215);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+footer {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    background: rgba(6,80,215);
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .rrss {
+    display: inline-flex;
+}
+
+
+footer img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bloque-2, .bloque-3, .bloque-4, .bloque-5 {
+        width: 650px;
+    }
+
+    .content-cards .card {
+        width: 200px;
+        height: 370px;
+    }
+
+    .formulario input, textarea  {
+        width: 290px;
+    }
+
+    .formulario textarea {
+        height: 100px;
+    }
+
+    aside {
+        margin-bottom: 30px;
+    }
+   
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .bloque-2, .bloque-3, .bloque-4, .bloque-5 {
+        width: 100%;
+    }
+
+    .content-cards {
+        display: block;
+    }
+
+    .content-cards .card {
+        width: 400px;
+        height: 445px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .bloque-2 {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .bloque-2 .texto {
+        width: 450px;
+        margin: auto;
+        padding: 20px;
+
+    }
+
+    .bloque-2 .texto p {
+        font-size: 20px;
+    }
+
+    h2, .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .bloque-3, .bloque-5 {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .bloque-5 img {
+        display: none;
+    }
+
+    .formulario .btn {
+        display: block;
+    }
+
+}
